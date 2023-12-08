@@ -22,6 +22,17 @@ const routes = [
     component: loadPage('AccountPage'),
     beforeEnter: authGuard
   },
+  {
+    path: '/recipes/:recipeId',
+    name: 'RecipeDetails',
+    component: loadPage('RecipeDetailsPage'),
+  },
+  {
+    path: '/account/MyRecipes',
+    name: 'MyRecipes',
+    component: loadPage('MyRecipesPage'),
+    beforeEnter: authGuard
+  },
 
 ]
 

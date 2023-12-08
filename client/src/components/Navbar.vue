@@ -26,8 +26,12 @@
             <button class="btn btn text-white fw-bold bg-success">Home</button>
           </router-link>
         </div>
-        <div class="col-12 col-md-2 mt-3"><button class="btn btn text-white fw-bold bg-success">My
-            Recipes</button>
+        <div class="col-12 col-md-2 mt-3">
+          <router-link :to="{ name: 'MyRecipes' }">
+            <button class="btn btn text-white fw-bold bg-success">My
+              Recipes
+            </button>
+          </router-link>
         </div>
         <div class="col-12 col-md-2 mt-3"><button class="btn btn text-white fw-bold bg-success">Favorites</button>
         </div>
